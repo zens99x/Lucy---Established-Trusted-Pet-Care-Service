@@ -43,7 +43,7 @@ a {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
     min-width: 193px;
     line-height: 56px;
     opacity: 0.6;
@@ -120,7 +120,9 @@ a {
 /* Action */
 
 .action__signup {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     min-width: 118px;
     border: 1px solid rgb(0, 9, 88, 0.5);
@@ -450,7 +452,6 @@ a {
 
 .about__img-wrap::after {
     content: "";
-
     position: absolute;
     height: 336px;
     inset: auto 0 0 0;
@@ -642,4 +643,128 @@ a {
 
 .tab__pane--active {
     display: block;
+}
+
+/* ===== Service ===== */
+.service {
+    margin-top: 190px;
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+
+.service__body {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 64px;
+}
+
+.service__text {
+    display: block;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    text-align: center;
+    color: #5e6085;
+    text-align: center;
+}
+
+.service__heading {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.service__card {
+    padding: 30px 22px 30px 28px;
+    width: 294px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    border-radius: 10px;
+}
+
+.service__title {
+    position: relative;
+    margin-left: 10px;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    color: #000958;
+}
+
+.service__title::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -10px;
+    top: 0;
+    border: 1px solid rgba(255, 91, 46, 1);
+    border-radius: 99px;
+}
+
+.service__desc {
+    margin: 18px 0 24px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    /* or 171% */
+    color: #656689;
+}
+
+.service__more {
+    display: flex;
+    align-items: center;
+}
+
+.service__more--link {
+    margin-right: 6px;
+    font-family: "Sora";
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    color: #34396a;
+}
+
+.service__card + .service__card {
+    margin-top: 24px;
+}
+
+.service__img {
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 100%;
+}
+
+.service__img-wrap {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__img-wrap::after {
+    position: absolute;
+    content: "";
+    height: 350px;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    border-radius: 10px;
+}
+
+.service__cta {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.service__cta--btn {
+    box-shadow: none;
+    opacity: unset;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    border-radius: 31px;
 }
