@@ -677,7 +677,7 @@ a {
 }
 
 .service__card {
-    padding: 30px 22px 30px 28px;
+    padding: 30px;
     width: 294px;
     background: #ffffff;
     border: 2px solid rgba(255, 188, 122, 0.26);
@@ -686,8 +686,7 @@ a {
 
 .service__title {
     position: relative;
-    margin-left: 10px;
-    font-family: "Sora";
+    padding-left: 12px;
     font-weight: 600;
     font-size: 2.2rem;
     line-height: 1;
@@ -698,11 +697,12 @@ a {
 .service__title::before {
     position: absolute;
     content: "";
-    bottom: 0;
-    left: -10px;
-    top: 0;
-    border: 1px solid rgba(255, 91, 46, 1);
+    display: inline-block;
+    inset: 0 auto 0 0;
+    width: 2px;
+    height: 22px;
     border-radius: 99px;
+    background: linear-gradient(#ff5b2e, #ffa187);
 }
 
 .service__desc {
@@ -767,4 +767,9 @@ a {
     opacity: unset;
     border: 1px solid rgba(255, 91, 46, 0.6);
     border-radius: 31px;
+}
+
+.service__cta--btn:hover {
+    background: #ff5b2e;
+    color: #fff;
 }
