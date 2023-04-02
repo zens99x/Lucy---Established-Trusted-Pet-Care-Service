@@ -769,3 +769,112 @@ a {
     border: 1px solid rgba(255, 91, 46, 0.6);
     border-radius: 31px;
 }
+
+/* ===== Staff ===== */
+
+.staff {
+    padding-top: 130px;
+}
+
+.staff__top {
+    text-align: center;
+}
+
+.staff__text {
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    text-align: center;
+    color: #5e6085;
+}
+
+.staff__list {
+    margin: 45px 0 48px;
+    display: grid;
+    column-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.staff__img {
+    width: 100%;
+    border-radius: 129.5px;
+}
+
+.staff__img-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px;
+}
+
+.staff__img-wrap::after {
+    position: absolute;
+    content: "";
+    height: 266px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+    border-radius: 129.5px;
+    z-index: -1;
+}
+
+.staff__decor {
+    position: absolute;
+    bottom: 0;
+}
+
+.staff__desc {
+    margin-top: 29px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    text-align: center;
+    color: #656689;
+}
+
+.staff__name {
+    margin-top: 14px;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    text-align: center;
+    color: #000958;
+}
+
+.staff__item:nth-child(even) .staff__decor {
+    bottom: unset;
+    top: 19px;
+}
+
+.staff__item:nth-child(2) .staff__img-wrap::after {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff__item:nth-child(3) .staff__img-wrap::after {
+    background: #fabf3e;
+}
+
+.staff__item:nth-child(4) .staff__img-wrap::after {
+    background: #5bd6e2;
+}
+
+.staff__cta {
+    display: flex;
+    justify-content: center;
+}
+
+.staff__btn {
+    box-shadow: none;
+    opacity: unset;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
