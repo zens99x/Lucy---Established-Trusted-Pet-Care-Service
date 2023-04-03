@@ -879,3 +879,8 @@ a {
     opacity: unset;
     border: 1px solid rgba(255, 91, 46, 0.6);
 }
+.service__cta--btn:hover {
+    /* hover */
+    background: #ff5b2e;
+    color: #fff;
+}
