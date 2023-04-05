@@ -894,6 +894,10 @@ a {
     background: #fff6ed;
 }
 
+.pricing__container {
+    width: 994px;
+}
+
 .pricing__top {
     text-align: center;
 }
@@ -1013,6 +1017,8 @@ a {
     font-weight: 500;
     font-size: 1.6rem;
     color: #ff5b2e;
+    background: transparent;
+    cursor: pointer;
 }
 
 .pricing__btn:hover {
@@ -1021,15 +1027,11 @@ a {
 }
 
 .pricing__list {
-    display: block;
     margin-top: 24px;
 }
 
 .pricing__list-item {
-    position: relative;
     display: flex;
-    align-items: center;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1;
     /* identical to box height, or 100% */
@@ -1037,12 +1039,7 @@ a {
 }
 
 .pricing__list-item::before {
-    /* position: absolute; */
-    display: inline-block;
     margin-right: 14.19px;
-    width: 9.19px;
-    height: 6.12px;
-    left: 0;
     content: url(../icon/pricing-mark.svg);
 }
 
