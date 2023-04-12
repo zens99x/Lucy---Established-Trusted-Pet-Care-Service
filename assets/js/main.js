@@ -35,3 +35,39 @@ feature_tabs.forEach((tab, index) => {
         this.classList.add("tab__item--active");
     };
 });
+
+//================================ Review slide ====================================== //
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+    console.log(n);
+    var i;
+    var slides = document.querySelectorAll(".review-item");
+    var dots = document.querySelectorAll(".review__dot");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(
+            " review__dot--active",
+            ""
+        );
+    }
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " review__dot--active";
+}
